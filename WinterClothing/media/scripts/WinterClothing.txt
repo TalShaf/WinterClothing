@@ -1,0 +1,61 @@
+/** Winter Clothing **/
+/** by TalSh **/
+
+
+
+module WinterClothing
+	
+	{	
+
+		imports	
+		{
+			Base
+		}
+
+		item WinterSweater
+		{
+			Palettes	=	Shirt_White,
+			BodyLocation	=	Top,
+			PalettesStart	=	Shirt_,
+			Type	=	Clothing,
+			Temperature	=	25,
+			SpriteName	=	Shirt,
+			DisplayName	=	Winter Sweater,
+			Icon	=	WinterSweater,
+		}
+		
+		item WinterTrousers
+		{
+			Palettes	=	Trousers_White,
+			BodyLocation	=	Bottoms,
+			PalettesStart	=	Trousers_,
+			Type	=	Clothing,
+			Temperature	=	14,
+			SpriteName	=	Trousers,
+			DisplayName	=	Winter Pants,
+			Icon	=	WinterTrousers,
+		}
+		
+		recipe Make Winter Sweater
+		{
+			keep Needle,
+			keep Scissors,
+			Thread,
+			Shirt=2,
+
+			Result:WinterSweater,
+			Time:100.0
+		}
+
+		recipe Make Winter Pants
+		{
+			keep Needle,
+			keep Scissors,
+			Thread,
+			Trousers=2,
+
+			Result:WinterTrousers,
+			Time:100.0
+		}
+		
+	}
