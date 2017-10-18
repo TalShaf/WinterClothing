@@ -58,4 +58,16 @@ module WinterClothing
 			Time:100.0
 		}
 		
-	}
+		recipe Wash Clothing
+    {
+       keep Vest/Shirt/Trousers/Skirt/Blouse/Underwear1/Underwear2/Shoes,
+       Soap2=1,
+       Water=3,
+
+       Result:Vest,
+       OnTest:WashClothing_TestIsValid,
+       Time:100.0,
+       OnCreate:WashClothing_OnCreate,
+       RemoveResultItem:true,
+    }
+}
